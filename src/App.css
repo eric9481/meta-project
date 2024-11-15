@@ -1,3 +1,13 @@
+:root {
+  --p1: #495E57;
+  --p2: #F4CE14;
+  --s1: #ee9972;
+  --s2: #fbdabb;
+  --h1: #edefee;
+  --h2: #333;
+}
+
+
 /* Header and Nav */
 
 .header {
@@ -13,7 +23,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: var(--h1);
   overflow-x: hidden;
   padding-top: 30px;
   padding-left: 0;
@@ -27,6 +37,7 @@
   margin-left: 25px;
   margin-top: 25px;
   padding: 3px 8px;
+  white-space: nowrap;
 }
 
 .nav.active {
@@ -85,7 +96,8 @@
 
 .bg-container {
   width: 100%;
-  background-color: green;
+  background-color: var(--p1);
+  color: var(--h1);
 }
 
 
