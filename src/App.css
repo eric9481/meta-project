@@ -1,10 +1,23 @@
 :root {
+  /* colors */
   --p1: #495E57;
   --p2: #F4CE14;
   --s1: #ee9972;
   --s2: #fbdabb;
   --h1: #edefee;
   --h2: #333;
+
+  /* Fonts */
+  --title: 500 5.3rem "Markazi Text";
+  --sub-title: 400 3.3rem "Markazi Text";
+  --lead-text: 500 1.5rem "Karla";
+  --paragraph: 400 1.3rem "Karla";
+  --section-title: 800 1.7rem "Karla";
+  --card-title: 700 1.5rem "Karla";
+}
+
+body {
+  font: var(--paragraph);
 }
 
 
@@ -38,6 +51,7 @@
   margin-top: 25px;
   padding: 3px 8px;
   white-space: nowrap;
+  font-weight: 700;
 }
 
 .nav.active {
@@ -76,6 +90,7 @@
 
   .nav li {
     margin-top: 0;
+    font-weight: 500;
   }
 
   .nav li:hover {
