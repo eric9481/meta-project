@@ -13,30 +13,32 @@ const Nav = () => {
   return (
     <>
       <ul className={sidebar ? "nav active" : "nav"}>
-        <button className="close" onClick={toggleSidebar}>
-          X
-        </button>
         <li>
-          <Link to="/" onClick={toggleSidebar}>
+          <button className="close" onClick={toggleSidebar}>
+            X
+          </button>
+        </li>
+        <li>
+          <Link to="/" onClick={toggleSidebar} className="nav-link">
             Home
           </Link>
         </li>
         <li>
-          <HashLink to='/#about'>About</HashLink>
+          <HashLink to='/#about' className="nav-link">About</HashLink>
         </li>
         <li>
-          <Link to="/menu">Menu</Link>
+          <Link to="/menu" className="nav-link">Menu</Link>
         </li>
         <li>
-          <Link to="/booking" onClick={toggleSidebar}>
+          <Link to="/booking" onClick={toggleSidebar} className="nav-link">
             Reservations
           </Link>
         </li>
         <li>
-          <Link to="/order">Order Online</Link>
+          <Link to="/order" className="nav-link">Order Online</Link>
         </li>
         <li>
-          <Link to="login">Login</Link>
+          <Link to="login" className="nav-link">Login</Link>
         </li>
       </ul>
 
