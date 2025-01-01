@@ -29,7 +29,7 @@ const Specials = () => {
   return (
     <div className="container">
       <div className="specials">
-        <h2>ORDER FOR DELIVERY!</h2>
+        <h2 className="specials-title">ORDER FOR DELIVERY!</h2>
       </div>
       <div className="specials-desktop">
         <h2>Specials</h2>

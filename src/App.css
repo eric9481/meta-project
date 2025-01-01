@@ -292,7 +292,7 @@ body {
     max-width: 265px;
     border-radius: 16px;
     overflow: hidden;
-    margin: 0;
+    margin: 0 0 50px;
   }
 
   .card-content {
@@ -331,6 +331,9 @@ body {
 
 .specials {
   padding: 15px 15px 0 15px;
+}
+
+.specials-title {
   font: var(--section-title);
 }
 
@@ -363,6 +366,62 @@ body {
 
   .specials-cards {
     display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+/* Customers Say */
+
+.cs {
+  padding: 30px 15px 15px 15px;
+}
+
+.cs-title {
+  font-size: 2rem;
+}
+
+.cs-card {
+  background-color: var(--h1);
+  color: var(--h2);
+  padding: 3px;
+  margin: 15px 0;
+  max-width: 200px;
+  height: 200px;
+}
+
+.cs-card-rating {
+  margin-left: 9px;
+  font-weight: 700;
+}
+
+.cs-card-icon {
+  font-size: 47px;
+}
+
+.cs-card-flex {
+  display: flex;
+
+}
+
+.cs-card-name {
+  font-weight: 700;
+  margin-left: 9px;
+}
+
+.cs-card-review {
+  margin-left: 9px;
+}
+
+.cs-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 860px) {
+  .cs-cards {
+    flex-direction: row;
     justify-content: space-between;
   }
 }
