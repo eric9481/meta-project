@@ -8,7 +8,7 @@ const CallToAction = () => {
         <h1 className="hero-title">Little Lemon</h1>
         <p className="hero-sub">Chicago</p>
         <div className="hero-info">
-          <p>
+          <p className="hero-lead">
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
@@ -26,7 +26,7 @@ const CallToAction = () => {
           <div>
             <h1 className="hero-title">Little Lemon</h1>
             <p className="hero-sub">Chicago</p>
-            <p>
+            <p className="hero-lead">
               We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist.
             </p>
