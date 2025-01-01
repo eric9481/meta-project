@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoPersonCircle } from "react-icons/io5";
+import { FaStar } from "react-icons/fa";
 
 const testimonials = [
   { name: "John", rating: 5, review: "Great food and friendly staff!" },
@@ -29,7 +30,7 @@ const CustomersSay = () => {
         <div className='cs-cards'>
           {testimonials.map((item) => (
             <div className='cs-card' key={item.name}>
-              <p className='cs-card-rating'>{item.rating}/5</p>
+              <p className='cs-card-rating'>{item.rating}/5 <FaStar /></p>
               <div className='cs-card-flex'>
                 <IoPersonCircle className='cs-card-icon'/>
                 <p className='cs-card-name'>{item.name}</p>

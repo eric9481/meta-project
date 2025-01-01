@@ -24,7 +24,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 10px 15px;
 }
 
@@ -352,7 +352,6 @@ body {
     align-items: center;
     font: var(--section-title);
     padding: 40px 0 20px;
-    
   }
 
   .specials-button {
@@ -364,12 +363,16 @@ body {
     border-radius: 16px;
   }
 
+  .specials-button:hover {
+    background-color: var(--h1);
+    transition: 0.1s;
+  }
+
   .specials-cards {
     display: flex;
     justify-content: space-between;
   }
 }
-
 
 /* Customers Say */
 
@@ -388,6 +391,7 @@ body {
   margin: 15px 0;
   max-width: 200px;
   height: 200px;
+  border-radius: 16px;
 }
 
 .cs-card-rating {
@@ -401,7 +405,6 @@ body {
 
 .cs-card-flex {
   display: flex;
-
 }
 
 .cs-card-name {
@@ -423,5 +426,42 @@ body {
   .cs-cards {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+
+/* Chicago */
+
+.chicago {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.chicago-title {
+  font: var(--title);
+  margin-bottom: 0;
+  line-height: 0.5;
+}
+
+.chicago-sub {
+  margin-top: 0;
+  font: var(--sub-title);
+  color: var(--h2);
+}
+
+.chicago-img {
+  display: none;
+}
+
+@media screen and (min-width: 860px) {
+  .chicago-img {
+    display: block;
+  }
+
+  .chicago-text {
+    padding-right: 30px;
   }
 }
