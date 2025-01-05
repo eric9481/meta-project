@@ -26,6 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
+  align-items: center;
 }
 
 .nav {
@@ -51,6 +52,7 @@ body {
   margin-top: 25px;
   white-space: nowrap;
   font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .nav-link {
@@ -88,6 +90,10 @@ body {
     order: 1;
   }
 
+  .flex-container {
+    order: 2;
+  }
+
   .nav {
     display: flex;
     position: relative;
@@ -96,7 +102,6 @@ body {
     background-color: white;
     padding-top: 0;
     align-items: center;
-    order: 2;
     overflow-x: visible;
   }
 
@@ -142,6 +147,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 15px;
 }
 
 .footer-logo {
@@ -382,6 +388,7 @@ body {
 
 .cs-title {
   font-size: 2rem;
+  text-align: center;
 }
 
 .cs-card {
@@ -426,6 +433,7 @@ body {
   .cs-cards {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
 }
 
@@ -456,6 +464,10 @@ body {
   display: none;
 }
 
+.chicago-content {
+  margin-bottom: 40px;
+}
+
 @media screen and (min-width: 860px) {
   .chicago-img {
     display: block;
@@ -464,4 +476,130 @@ body {
   .chicago-text {
     padding-right: 30px;
   }
+}
+
+/* Booking Form */
+
+label {
+  display: block;
+  margin-left: 10px;
+  font: var(--section-title);
+}
+
+.form {
+  padding: 15px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.form input, select {
+  display: block;
+  margin-bottom: 40px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 15px;
+  font: var(--paragraph);
+  box-sizing: border-box;
+  border: 2px solid #a0a0a0;
+}
+
+.form-submit {
+  width: 100%;
+  display: block;
+  font: var(--paragraph);
+  color: black;
+  font-weight: bold;
+  border: none;
+  background-color: var(--p2);
+  border-radius: 1rem;
+  padding: 15px 15px;
+}
+
+.form-submit:hover {
+  background-color: var(--h1);
+  transition: 0.1s;
+}
+
+@media screen and (min-width: 860px) {
+  .form-submit {
+    width: fit-content;
+    padding: 20px 30px;
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+
+  }
+}
+
+/* BookingPage */
+
+.bp {
+  padding: 70px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.bp-title {
+  font: var(--title);
+  color: var(--p2);
+  margin: 0;
+  line-height: 0.5;
+}
+
+.bp-sub {
+  font: var(--sub-title);
+  margin: 0;
+}
+
+.bp-img {
+  display: none;
+}
+
+@media screen and (min-width: 860px) {
+  .bp {
+    padding: 15px;
+  }
+
+  .bp-img {
+    display: block;
+    margin-left: 50px;
+    border-radius: 16px;
+  }
+}
+
+/* Missing */
+
+.missing {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding: 0 15px;
+}
+
+.missing-heading {
+  font: var(--title);
+  margin: 0;
+  line-height: 1;
+}
+
+.missing-sub {
+  font: var(--sub-title);
+  margin: 0 0 30px 0;
+}
+
+/* Booking Confirmed */
+
+.cb {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding: 0 15px;
+}
+
+.cb-title {
+  font: var(--title);
+  margin: 0;
+  line-height: 1;
 }

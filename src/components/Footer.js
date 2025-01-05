@@ -4,7 +4,7 @@ import logoAlt from '../assets/logoVar.jpg'
 const Footer = () => {
   return (
     <>
-    <div className="bg-container">
+    <footer className="bg-container">
       <div className="footer container">
         <img src={logoAlt} className='footer-logo' alt='little lemon logo'/>
         <p className='footer-copyright'>copyright Little-Lemon 2024</p>
@@ -28,7 +28,7 @@ const Footer = () => {
             <li>Email</li>
           </ul>
         </div>
-      </div>
+      </footer>
     
     
     </>

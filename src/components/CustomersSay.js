@@ -24,7 +24,7 @@ const testimonials = [
 
 const CustomersSay = () => {
   return (
-    <div className='bg-container'>
+    <section className='bg-container'>
       <div className='container cs'>
         <h2 className='cs-title'>Testimonials</h2>
         <div className='cs-cards'>
@@ -40,7 +40,7 @@ const CustomersSay = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

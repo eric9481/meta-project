@@ -3,7 +3,7 @@ import HeroImg from "../assets/restauranfoodresized.jpg";
 
 const CallToAction = () => {
   return (
-    <div className="bg-container">
+    <section className="bg-container">
       <div className="hero container">
         <h1 className="hero-title">Little Lemon</h1>
         <p className="hero-sub">Chicago</p>
@@ -18,7 +18,7 @@ const CallToAction = () => {
             alt="A meal prepared at Little Lemon"
           />
         </div>
-        <button className="hero-button">Reserve a Table</button>
+        <button className="hero-button" aria-label="On Click">Reserve a Table</button>
       </div>
 
       <div className="hero desktop container">
@@ -30,7 +30,7 @@ const CallToAction = () => {
               We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist.
             </p>
-            <button className="hero-button">Reserve a Table</button>
+            <button className="hero-button" aria-label="On Click">Reserve a Table</button>
           </div>
           <img
             src={HeroImg}
@@ -39,7 +39,7 @@ const CallToAction = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

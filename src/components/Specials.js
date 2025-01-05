@@ -27,7 +27,7 @@ const data = [
 
 const Specials = () => {
   return (
-    <div className="container">
+    <section className="container">
       <div className="specials">
         <h2 className="specials-title">ORDER FOR DELIVERY!</h2>
       </div>
@@ -42,7 +42,7 @@ const Specials = () => {
           <Card key={item.title} data={item} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

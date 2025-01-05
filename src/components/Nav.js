@@ -11,39 +11,40 @@ const Nav = () => {
   };
 
   return (
-    <>
-      <ul className={sidebar ? "nav active" : "nav"}>
-        <li>
-          <button className="close" onClick={toggleSidebar}>
-            X
-          </button>
-        </li>
-        <li>
-          <Link to="/" onClick={toggleSidebar} className="nav-link">
-            Home
-          </Link>
-        </li>
-        <li>
-          <HashLink to='/#about' className="nav-link">About</HashLink>
-        </li>
-        <li>
-          <Link to="/menu" className="nav-link">Menu</Link>
-        </li>
-        <li>
-          <Link to="/booking" onClick={toggleSidebar} className="nav-link">
-            Reservations
-          </Link>
-        </li>
-        <li>
-          <Link to="/order" className="nav-link">Order Online</Link>
-        </li>
-        <li>
-          <Link to="login" className="nav-link">Login</Link>
-        </li>
-      </ul>
-
-      <img src={menu} className="menu" onClick={toggleSidebar} />
-    </>
+    <nav className="flex-container">
+        <ul className={sidebar ? "nav active" : "nav"}>
+          <li>
+            <button className="close" onClick={toggleSidebar}>
+              X
+            </button>
+          </li>
+          <li>
+            <Link to="/" onClick={toggleSidebar} className="nav-link">
+              Home
+            </Link>
+          </li>
+          <li>
+            <HashLink smooth to='#about' className="nav-link" onClick={toggleSidebar}>About</HashLink>
+          </li>
+          <li>
+            <Link to="/menu" className="nav-link" onClick={toggleSidebar}>Menu</Link>
+          </li>
+          <li>
+            <Link to="/booking" onClick={toggleSidebar} className="nav-link">
+              Reservations
+            </Link>
+          </li>
+          <li>
+            <Link to="/order" className="nav-link" onClick={toggleSidebar}>Order Online</Link>
+          </li>
+          <li>
+            <Link to="login" className="nav-link" onClick={toggleSidebar}>Login</Link>
+          </li>
+        </ul>
+        
+        <img src={menu} className="menu" onClick={toggleSidebar} />
+      
+    </nav>
   );
 };
 

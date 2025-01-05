@@ -4,7 +4,7 @@ import greekSalad from "../assets/greekSalad.jpg";
 const Card = ({data}) => {
   return (
     <>
-      <div className="container card">
+      <article className="container card">
         <div className=" card-break">
           <div>
             <h3>{data.title}</h3>
@@ -15,9 +15,9 @@ const Card = ({data}) => {
           </div>
           <img src={data.src} className="card-img" />
         </div>
-      </div>
+      </article>
       
-      <div className="card-desktop container">
+      <article className="card-desktop container">
         <img src={data.src} className="card-img" />
         <div className="card-content">
           <div className="card-title">
@@ -29,7 +29,7 @@ const Card = ({data}) => {
           </p>
           <p className="card-order">Order a delivery &gt;</p>
         </div>
-      </div>
+      </article>
     </>
   );
 };
